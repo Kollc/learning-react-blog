@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  border: 2px solid blue;
+  margin-bottom: 20px;
+}
+
+.post__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.post__text {
+  display: flex;
+  flex-direction: column
+}
+
+.post__delete {
+  margin-left: auto;
+}
+
+.post-list__title {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.post__item-enter {
+  transform: translateX(-350px);
+}
+
+.post__item-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.post__item-exit {
+  opacity: 1;
+}
+
+.post__item-exit-active {
+  transform: translateX(-350px);
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.page__item {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+  margin: 0 5px
+}
+
+.page__item--current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color:lightgreen;
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+.navbar__links a {
+  margin: 10px;
+}
+
+.post__buttons {
+  display: flex;
+}
+
+.post__btn {
+  margin: 0 10px;
+}
